@@ -64,7 +64,9 @@ drawCircles()
       
 svg.on("click", function () {
   
-  let coords = d3.mouse(this);
+  let aux:any = this
+  let coords = d3.mouse(aux);
+
 
   // Normally we go from data to pixels, but here we're doing pixels to data
   var newData= {
